@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/59c480e1cd.js" crossorigin="anonymous"></script>
+    <title>E-Commerce</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="jq/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+
+            <div class="shopify">
+                <i class="fa-brands fa-shopify"></i>
+            </div >
+            <div class="search">
+                <input type="search" placeholder="search here" id="search-box"><i class="fas fa-search"></i>
+        </div>
+
+            <div class="icon">
+                <i class="fas fa-user icon" id="logbtn" onmouseover="showHideLogin()" onclick="showHideLogin()"></i><a href="#" class="fas fa-heart icon"></a><a href="#" class="fas fa-shopping-cart icon"></a>         
+            </div>
+        </nav>
+            <!--popup start-->
+            <div class="cart" id="cart">
+                <div class="box">
+                    <i class="fa fa-trash"></i>
+                    <img src="image/s2.jpg">
+                    <div class="content">
+                        <span class="price"></span>
+                        <h3>Shoes</h3>
+                        <span class="quantitay">Qty:1</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa fa-trash"></i>
+                    <img src="image/s3.jpg">
+                    <div class="content">
+                        <h3>Shoes</h3>
+                        <span class="price">$499</span>
+                        <span class="quantitay">Qty:1</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa fa-trash"></i>
+                    <img src="image/s4.jpg">
+                    <div class="content">
+                        <h3>Shoes</h3>
+                        <span class="price">$499</span>
+                        <span class="quantitay">Qty:1</span>
+                    </div>
+                </div>
+                <div class="total"> total :$1497</div>
+                <a href="#" class="btn">checkout</a>
+            </div>
+
+            <!--popup end-->
+
+
+            <!--popupLogIn Start-->
+            <div id="loginfo">
+                <form action="http://localhost/karan/E-commerce%20Website/form.php" class="login" id="loginfo1" method="post"> 
+                    <h3>Login Now</h3>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" class="lbox">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="Enter your password" class="lbox">
+                    <a href="#" class="password"><p>Forget password</p></a><br>
+                    <input type="submit" value="Login Now" class="btn">
+                    <p class="sign" >Dont Have an Account <a href="#" id="signbtn">Sign up</a></p>
+                    
+                </form>
+                <div id="signup">
+                    <h3>Sign Up</h3>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Enter your username" class="lbox">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your Email" class="lbox">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" class="lbox">
+                    <input type="submit" value="Sign up" class="btn1">
+                    <p class="sign">Dont Have an Account <a href="#" id="login">Log in</a></p>
+                </div>
+                
+
+            </div>
+            <!--popupLogIn end-->
+
+        </nav>
+        <!--nav1 end-->
+
+        <!--nav2 start-->
+        <nav class="nav3">
+            <ul>
+                <li><a href="E commerce.html"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>Boy</a></li>
+                
+                <li><a href="#"><i class="fa fa-anchor"></i>Toys <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-clipboard"></i>Wooden</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i>Plastic</a></li>
+                        <li><a href="#"><i class="fa fa-gavel"></i>Iron</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav><br>
+
+        <!--nav3 end-->
+            <div id="sidenav">
+        <section class="sidenav1" >
+            <ul>
+                <li><a href="E commerce.html"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>Boy</a></li>
+                <li><a href="#"><i class="fa fa-users"></i>Accesories</a></li>
+                
+                <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                <li><a href="#"><i class="fa fa-anchor"></i>Toys <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-clipboard"></i>Wooden</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i>Plastic</a></li>
+                        <li><a href="#"><i class="fa fa-gavel"></i>Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+        </div>
+        <i class="fa-solid fa-bars" id="menubar" onclick="showHidesidenav1()" ></i>
+
+
+        <!--featured start-->
+        <section class="featured">
+            <div class="featured-text">
+                <button>Coming soon</button>
+                <h2>Our new designs</h2>
+            </div>
+        </section>
+        <!--featured end-->
+    </header>
+
+    <!--latest start-->
+    <section class="latest">
+        <div class="product-intro">
+            <h1>New <span>Arrivals</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div>
+                    <img src="image/s2.jpg" alt="">
+                </div>
+                <div class="card-2">
+                <h1>Branded Shoes</h1>
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$499.00</p>
+                <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+            </div>
+                
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/s3.jpg" alt="">
+                </div>
+                <div class="card-2">
+                <h1>Branded Shoes</h1>
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>$499.00</p>
+                <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+            </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/s8.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/s2.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div>
+                    <img src="image/s4.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/s5.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/s6.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/s7.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--latest end-->
+    <!--popular product Start-->
+    <section class="latest">
+        <div class="product-intro">
+            <h1>Popular <span>Products</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div>
+                    <img src="image/bu1.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/bu2.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/bu3.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/bu4.jpg" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Branded Shoes</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--popular product end-->
+    <section class="trends">
+        <div class="product-intro">
+            <h1>Top <span>Trends</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div>
+                    <img src="image/headphone1.png" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Headphone</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/headphone2.png" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Headphone</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/headphone3.png" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Headphone</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image/headphone1.png" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Headphone</h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$499.00</p>
+                    <button>Add to cart</button><div><a href="#" class="fa-regular fa-heart" id="wishlist"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer start-->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> Shopping <i class="fa fa-shopping-bag"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae earum delectus facere nobis
+                    reprehenderit libero esse minus minima expedita et?</p>
+                    <div class="share">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                    </div>
+            </div>
+
+            <div class="box">
+                <h3> Contact</h3>
+                <a href="#" class="links"><i class="fa fa-phone"></i> +91 7088170894</a>
+                <a href="#" class="links"><i class="fa fa-phone"></i> +91 9876543210</a>
+                <a href="#" class="links"><i class="fa fa-envelope"></i>singhkanuu7088@gmail.com</a>
+                <a href="#" class="links"><i class="fa fa-map-marker"></i>Agra India</a>
+                    
+            </div>
+
+            <div class="box">
+                <h3> Quick Links</h3>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>HOME</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Boy</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Accesories</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Toy</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Review</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3> Newsletter </h3>
+                <p>Subcribe for latest update</p>
+                <input type="email" placeholder="your email" class="email"><input type="submit" value="subscribe" class="Sbtn">
+                <img src="image/payment.png" class="img">
+            </div>
+
+        </div>
+    </section>
+
+    <!--footer end-->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+    <header>
+        <nav class="nav1">
+
+            <div class="shopify">
+                <i class="fa-brands fa-shopify"></i>
+            </div >
+            <div class="search">
+                <input type="search" placeholder="search here" id="search-box"><i class="fa fa-search"></i>
+        </div>
+
+            <div class="icon">
+                <i class="fa fa-user icon"id="logbtn" onmouseover="showHideLogin()" onclick="showHideLogin()"></i><a href="#" class="fa fa-heart icon"></a><a href="#" class="fa fa-shopping-cart icon"></a>         
+            </div>
+        </nav>
+
+         <!--popupLogIn Start-->
+         <div id="loginfo">
+            <form action="#" class="login">
+                <h3>Login Now</h3>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your Email" class="lbox">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" class="lbox">
+                <a href="#" class="password"><p>Forget password</p></a><br>
+                <input type="submit" value="Login Now" class="btn">
+                <p class="sign">Dont Have an Account <a href="#">Sign up</a></p>
+                
+            </form>
+        </div>
+        <!--popupLogIn end-->
+    </nav>
+
+         <section id="blog-home" class="pt-5 mt-5 container">
+        <h2 class="font-weight-bold pt-5">Shopping cart</h2>
+        <hr> </section>   
+
+        <section id="Shopping" class="container my-5">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantitay</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                        <td><img src="image/s2.jpg" alt=""></td>
+                        <td><h5>Shoes</h5></td>
+                        <td><h5>$499</h5></td>
+                        <td><input class="num" value="1" type="number"></td>
+                        <td><h5>$499</h5></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                        <td><img src="image/bu4.jpg" alt=""></td>
+                        <td><h5>Product</h5></td>
+                        <td><h5>$499</h5></td>
+                        <td><input class="num" value="1" type="number"></td>
+                        <td><h5>$499</h5></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><i class="fa-sharp fa-solid fa-trash"></i></a></td>
+                        <td><img src="image/s7.jpg" alt=""></td>
+                        <td><h5>Shoes</h5></td>
+                        <td><h5>$499</h5></td>
+                        <td><input class="num" value="1" type="number"></td>
+                        <td><h5>$499</h5></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <section id="cart-bottom" class="container-2">
+            <div class="coupon">
+                <div class="coupon1">
+                    <p class="p1">COUPON</p>
+                    <p class="p1">Enter your coupon code</p>
+                    <input type="text" placeholder="Coupon Code" id="coupon-input"><button class="Applay">Applay coupon</button>
+                </div>
+            </div>
+            <div class="total">
+                <div>
+                    <p class="p1">Cart Total</p>
+                    <div class="d-flex">
+                        <p class="p1">subtotal</p>
+                        <p>$1497</p>
+                    </div>
+                    <div class="d-flex">
+                        <p>Shiping</p>
+                        <p >$500</p>
+                    </div>
+                    <hr class="hr-2">
+                    <div class="d-flex">
+                        <p style="font-size: 20px;">total</p>
+                        <p>$1997</p>
+                    </div>
+                 <button class="Applay">Procced To Checkout</button>
+                </div>
+        </section>
+     <!--footer start-->
+
+
+     <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> Shopping <i class="fa fa-shopping-bag"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae earum delectus facere nobis
+                    reprehenderit libero esse minus minima expedita et?</p>
+                    <div class="share">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                    </div>
+            </div>
+
+            <div class="box">
+                <h3> Contact</h3>
+                <a href="#" class="links"><i class="fa fa-phone"></i> +91 7088170894</a>
+                <a href="#" class="links"><i class="fa fa-phone"></i> +91 9876543210</a>
+                <a href="#" class="links"><i class="fa fa-envelope"></i>singhkanuu7088@gmail.com</a>
+                <a href="#" class="links"><i class="fa fa-map-marker"></i>Agra India</a>
+                    
+            </div>
+
+            <div class="box">
+                <h3> Quick Links</h3>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>HOME</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Boy</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Accesories</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Toy</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Review</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3> Newsletter </h3>
+                <p>Subcribe for latest update</p>
+                <input type="email" placeholder="your email" class="email"><input type="submit" value="subscribe" class="Sbtn">
+                <img src="image/payment.png" class="img">
+            </div>
+
+        </div>
+    </section>
+
+    <!--footer end-->
+</body>
+</html>
